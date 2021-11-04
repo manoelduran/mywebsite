@@ -15,11 +15,11 @@ import {
 export function HomeHero() {
   return (
     <Container>
-      <img src="https://github.com/manoelduran.png" alt="Minha foto" />
+      <img src="https://github.com/manoelduran.png" alt="Manoel Duran" />
       <InfoContainer>
         <InfoText>
-          <Pleasure>Olá</Pleasure>
-          <PleasureName>Me chamo Manoel</PleasureName>
+          <Pleasure>Bem vindo,</Pleasure>
+          <PleasureName>ao meu Website!</PleasureName>
         </InfoText>
         <InfoCards>
           <InfoCardOne />

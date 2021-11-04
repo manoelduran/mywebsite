@@ -15,10 +15,10 @@ export function InfoCardOne() {
       <CardText>// Minha apresentação</CardText>
       <Info>Infos</Info> {'\u007B'}
       <UserCardInfos>
-        Nome: <UserName>Manoel Duran,</UserName>
+        Nome: <UserName>Manoel,</UserName>
       </UserCardInfos>
       <UserCardInfos>
-        Sobrenome: <UserLastName>Duran</UserLastName>
+        Sobrenome: <UserLastName>Cendon Duran</UserLastName>
       </UserCardInfos>
       {'\u007D'}
     </Card>

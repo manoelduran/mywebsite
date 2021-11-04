@@ -5,12 +5,12 @@ import { Card, Info, UserCardInfos, UserName, UserLastName } from './styles';
 export function InfoCardTwo() {
   return (
     <Card>
-      <Info>Cargo</Info> {'\u007B'}
+      <Info>Job Info</Info> {'\u007B'}
       <UserCardInfos>
-        Função: <UserName>Desenvolvedor Front-End,</UserName>
+        Formação: <UserName>Engenheiro Civil,</UserName>
       </UserCardInfos>
       <UserCardInfos>
-        Empresa: <UserLastName>-</UserLastName>
+        Função: <UserLastName>Desenvolvedor Front-End</UserLastName>
       </UserCardInfos>
       {'\u007D'}
     </Card>
