@@ -17,7 +17,7 @@ export function Footer() {
   }
   return (
     <Container>
-      <DivContainer>
+      <DivContainer className="container">
         <TopButton type="button" onClick={handleScrollTop}>
           Voltar ao topo
         </TopButton>

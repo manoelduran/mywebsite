@@ -7,7 +7,7 @@ export function Header() {
     <Container>
       <PagesList>
         <NavLink title="Home" path="/" />
-        <NavLink title="Projetos" path="/32" />
+        <NavLink title="Projetos" path="/MyProjects" includes />
       </PagesList>
     </Container>
   );
