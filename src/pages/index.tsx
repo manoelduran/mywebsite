@@ -18,8 +18,8 @@ export default function Home() {
         <Projects />
         <Knowledges />
         <ContactUs />
-        <Footer />
       </main>
+      <Footer />
     </HomeContainer>
   );
 }

@@ -9,10 +9,18 @@ export function Footer() {
   function handleRedirect(url: string) {
     window.open(url);
   }
+  function handleScrollTop() {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
   return (
     <Container>
       <DivContainer>
-        <TopButton type="button">Voltar ao topo</TopButton>
+        <TopButton type="button" onClick={handleScrollTop}>
+          Voltar ao topo
+        </TopButton>
         <IconLinks>
           <AiOutlineTwitter
             onClick={() => handleRedirect('https://twitter.com')}
