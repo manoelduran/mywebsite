@@ -7,7 +7,11 @@ import { BannerProjeto } from '../../../components/BannerProjeto';
 import { Header } from '../../../components/Header';
 import { getPrismicClient } from '../../../services/prismic';
 
-import { MyProjectContainer, Text, ProjectButton } from '../styles';
+import {
+  MyProjectContainer,
+  Text,
+  ProjectButton
+} from '../../../styles/MyProjectStyles';
 import { LoadingScreen } from '../../../components/LoadingScreen';
 
 interface IProjects {

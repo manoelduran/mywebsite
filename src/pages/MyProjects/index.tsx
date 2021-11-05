@@ -6,7 +6,7 @@ import { GetStaticProps } from 'next';
 import { Header } from '../../components/Header';
 import { MyProjectItem } from '../../components/MyProjectItem';
 import { getPrismicClient } from '../../services/prismic';
-import { Container } from './styles';
+import { Container } from '../../styles/MyProjectStyles';
 import 'aos/dist/aos.css';
 
 interface IProjects {
