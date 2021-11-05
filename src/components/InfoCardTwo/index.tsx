@@ -4,7 +4,7 @@ import { Card, Info, UserCardInfos, UserName, UserLastName } from './styles';
 
 export function InfoCardTwo() {
   return (
-    <Card>
+    <Card data-aos="zoom-in">
       <Info>Job Info</Info> {'\u007B'}
       <UserCardInfos>
         Formação: <UserName>Engenheiro Civil,</UserName>

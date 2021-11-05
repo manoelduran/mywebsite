@@ -22,7 +22,6 @@ export function ContactUs() {
       method: 'post',
       body: JSON.stringify({ name, email, message })
     });
-    console.log({ name, email, message });
     setName('');
     setEmail('');
     setMessage('');
@@ -33,7 +32,7 @@ export function ContactUs() {
         title={
           <>
             Precisa dos <br />
-            eus serviços?
+            meus serviços?
           </>
         }
         description={
@@ -43,7 +42,7 @@ export function ContactUs() {
           </>
         }
       />
-      <Content>
+      <Content data-aos="fade-up">
         <form method="post" onSubmit={handleFormSubmit}>
           <FormInputs>
             <User>

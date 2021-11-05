@@ -46,7 +46,6 @@ export const getStaticProps: GetStaticProps = async () => {
       orderings: '[document.first_publication_date desc]'
     }
   );
-  console.log(projectsResponse.results);
 
   const projects = projectsResponse.results.map(project => ({
     slug: project.uid,

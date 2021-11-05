@@ -18,7 +18,7 @@ export function ExperienceItem({
   description
 }: ExperienceItemProps) {
   return (
-    <ExperienceContainer>
+    <ExperienceContainer data-aos="fade-up">
       <ExperienceDiv>
         <Year>{year}</Year>
         <Function>{title}</Function>

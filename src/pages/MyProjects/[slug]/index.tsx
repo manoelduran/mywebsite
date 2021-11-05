@@ -1,11 +1,13 @@
 import React from 'react';
 import Prismic from '@prismicio/client';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { useRouter } from 'next/router';
 import { BannerProjeto } from '../../../components/BannerProjeto';
 import { Header } from '../../../components/Header';
 import { getPrismicClient } from '../../../services/prismic';
 
 import { MyProjectContainer, Text, ProjectButton } from '../styles';
+import { LoadingScreen } from '../../../components/LoadingScreen';
 
 interface IProjects {
   slug: string;
@@ -21,6 +23,10 @@ interface MyProjectProps {
 }
 
 export default function MyProject({ projects }: MyProjectProps) {
+  const router = useRouter();
+  if (router.isFallback) {
+    return <LoadingScreen />;
+  }
   return (
     <MyProjectContainer>
       <Header />

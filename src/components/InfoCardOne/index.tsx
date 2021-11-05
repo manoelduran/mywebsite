@@ -11,7 +11,7 @@ import {
 
 export function InfoCardOne() {
   return (
-    <Card>
+    <Card data-aos="zoom-in">
       <CardText>// Minha apresentação</CardText>
       <Info>Infos</Info> {'\u007B'}
       <UserCardInfos>

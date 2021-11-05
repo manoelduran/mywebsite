@@ -19,7 +19,7 @@ interface ProjectItemProps {
 
 export function ProjectItem({ title, type, slug, image }: ProjectItemProps) {
   return (
-    <ProjectItemContainer>
+    <ProjectItemContainer data-aos="fade-up">
       <ProjectItemSection imgUrl={image}>
         <Overlay className="overlay" />
         <Content className="text">

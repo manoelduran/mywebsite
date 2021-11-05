@@ -14,11 +14,11 @@ import {
 
 export function HomeHero() {
   return (
-    <Container>
+    <Container data-aos="fade-up">
       <img src="https://github.com/manoelduran.png" alt="Manoel Duran" />
       <InfoContainer>
         <InfoText>
-          <Pleasure>Bem vindo,</Pleasure>
+          <Pleasure>Bem vindo</Pleasure>
           <PleasureName>ao meu Website!</PleasureName>
         </InfoText>
         <InfoCards>

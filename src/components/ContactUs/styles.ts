@@ -11,7 +11,7 @@ export const Container = styled.section`
 export const Content = styled.div`
   margin-top: 2rem;
   width: 100%;
-  background: ${({ theme }) => theme.backgroundLight};
+  background: none;
   padding: 3rem;
 `;
 

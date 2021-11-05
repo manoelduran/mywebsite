@@ -1,7 +1,8 @@
 /* eslint-disable no-console */
 import { GetStaticProps } from 'next';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Prismic from '@prismicio/client';
+import Aos from 'aos';
 import { ContactUs } from '../components/ContactUs';
 import { Experiences } from '../components/Experiences';
 import { Footer } from '../components/Footer';
@@ -11,6 +12,7 @@ import { Knowledges } from '../components/Knowledges';
 import { Projects } from '../components/Projects';
 import { getPrismicClient } from '../services/prismic';
 import { HomeContainer } from '../styles/styles';
+import 'aos/dist/aos.css';
 
 interface IProjects {
   slug: string;
@@ -26,6 +28,9 @@ interface HomeProps {
 }
 
 export default function Home({ projects }: HomeProps) {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <HomeContainer>
       <Header />
@@ -49,7 +54,6 @@ export const getStaticProps: GetStaticProps = async () => {
       orderings: '[document.first_publication_date desc]'
     }
   );
-  console.log(projectsResponse.results);
 
   const projects = projectsResponse.results.map(project => ({
     slug: project.uid,
