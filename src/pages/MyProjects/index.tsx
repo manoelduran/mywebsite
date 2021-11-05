@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Prismic from '@prismicio/client';
+import Head from 'next/head';
+import Aos from 'aos';
 import { GetStaticProps } from 'next';
 import { Header } from '../../components/Header';
 import { MyProjectItem } from '../../components/MyProjectItem';
 import { getPrismicClient } from '../../services/prismic';
 import { Container } from './styles';
+import 'aos/dist/aos.css';
 
 interface IProjects {
   slug: string;
@@ -20,8 +23,20 @@ interface MyProjectsProps {
 }
 
 export default function MyProjects({ projects }: MyProjectsProps) {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <Container>
+      <Head>
+        <title>Projects | Manoel Duran</title>
+        <meta name="description" content="Here is my portfolio!" />
+        <meta property="og:image" content="/ogimage.png" />
+        <meta property="og:image:secure_url" content="/ogimage.png" />
+        <meta name="twitter:image" content="/ogimage.png" />
+        <meta name="twitter:image:src" content="/ogimage.png" />
+        <meta property="og:description" content="Here is my portfolio!" />
+      </Head>
       <Header />
       <main className="container">
         {projects.map(project => (

@@ -36,6 +36,7 @@ export const ExperienceDiv = styled.div`
   padding: 1rem;
   padding-top: 2.5rem;
   height: 20rem;
+  max-width: 19rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -52,6 +53,7 @@ export const ExperienceDiv = styled.div`
   @media (max-width: 700px) {
     height: auto;
     padding: 2rem;
+    max-width: 100%;
     &:hover {
       transform: translateY(0);
     }

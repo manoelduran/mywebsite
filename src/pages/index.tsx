@@ -3,6 +3,7 @@ import { GetStaticProps } from 'next';
 import React, { useEffect } from 'react';
 import Prismic from '@prismicio/client';
 import Aos from 'aos';
+import Head from 'next/head';
 import { ContactUs } from '../components/ContactUs';
 import { Experiences } from '../components/Experiences';
 import { Footer } from '../components/Footer';
@@ -33,6 +34,21 @@ export default function Home({ projects }: HomeProps) {
   }, []);
   return (
     <HomeContainer>
+      <Head>
+        <title>Home | Manoel Duran</title>
+        <meta
+          name="description"
+          content="I'm a software developer. Here you can know about me and see me portfolio!"
+        />
+        <meta property="og:image" content="/ogimage.png" />
+        <meta property="og:image:secure_url" content="/ogimage.png" />
+        <meta name="twitter:image" content="/ogimage.png" />
+        <meta name="twitter:image:src" content="/ogimage.png" />
+        <meta
+          property="og:description"
+          content="I'm a software developer. Here you can know about me and see me portfolio!"
+        />
+      </Head>
       <Header />
       <main className="container">
         <HomeHero />
