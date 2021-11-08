@@ -1,8 +1,4 @@
-import {
-  AiOutlineTwitter,
-  AiOutlineGithub,
-  AiFillLinkedin
-} from 'react-icons/ai';
+import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
 import { Container, DivContainer, TopButton, IconLinks } from './styles';
 
 export function Footer() {
