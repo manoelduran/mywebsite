@@ -47,9 +47,10 @@ export const KnowledgeItemContainer = styled.div`
 
 export const Name = styled.p`
   color: ${({ theme }) => theme.primary};
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 300;
   text-transform: uppercase;
+
   @media (max-width: 1000px) {
     font-size: 1rem;
   }
