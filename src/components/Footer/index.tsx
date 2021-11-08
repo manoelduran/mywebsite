@@ -22,14 +22,15 @@ export function Footer() {
           Voltar ao topo
         </TopButton>
         <IconLinks>
-          <AiOutlineTwitter
-            onClick={() => handleRedirect('https://twitter.com')}
-          />
           <AiOutlineGithub
-            onClick={() => handleRedirect('https://github.com')}
+            onClick={() => handleRedirect('https://github.com/manoelduran')}
           />
           <AiFillLinkedin
-            onClick={() => handleRedirect('https://linkedin.com')}
+            onClick={() =>
+              handleRedirect(
+                'https://www.linkedin.com/in/manoel-duran-63aaa0105/'
+              )
+            }
           />
         </IconLinks>
       </DivContainer>

@@ -5,7 +5,6 @@ import Prismic from '@prismicio/client';
 import Aos from 'aos';
 import Head from 'next/head';
 import { ContactUs } from '../components/ContactUs';
-import { Experiences } from '../components/Experiences';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { HomeHero } from '../components/HomeHero';
@@ -52,7 +51,7 @@ export default function Home({ projects }: HomeProps) {
       <Header />
       <main className="container">
         <HomeHero />
-        <Experiences />
+
         <Projects projects={projects} />
         <Knowledges />
         <ContactUs />
