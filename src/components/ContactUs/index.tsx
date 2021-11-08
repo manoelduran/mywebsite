@@ -37,8 +37,7 @@ export function ContactUs() {
         }
         description={
           <>
-            o formulário abaixo que
-            <br /> irei retornar em breve
+            Preencha o formulário abaixo <br /> que irei retornar em breve!
           </>
         }
       />
