@@ -21,7 +21,7 @@ export function Projects({ projects }: ProjectsProps) {
     <Container>
       <SectionTitle title="Últimos Projetos" />
       <SectionContainer>
-        {projects.slice(0, 3).map(project => (
+        {projects.slice(0, 4).map(project => (
           <ProjectItem
             key={project.slug}
             title={project.title}
