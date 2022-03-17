@@ -15,7 +15,7 @@ export function Footer() {
     <Container>
       <DivContainer className="container">
         <TopButton type="button" onClick={handleScrollTop}>
-          Voltar ao topo
+          Back to the top
         </TopButton>
         <IconLinks>
           <AiOutlineGithub

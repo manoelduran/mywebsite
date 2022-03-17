@@ -19,7 +19,7 @@ interface ProjectsProps {
 export function Projects({ projects }: ProjectsProps) {
   return (
     <Container>
-      <SectionTitle title="Últimos Projetos" />
+      <SectionTitle title="Last Projects" />
       <SectionContainer>
         {projects.slice(0, 4).map(project => (
           <ProjectItem
@@ -33,7 +33,7 @@ export function Projects({ projects }: ProjectsProps) {
       </SectionContainer>
       <ProjectsButton type="button">
         <Link href="/MyProjects">
-          <a>Ver todos os projetos</a>
+          <a>See all projects</a>
         </Link>
       </ProjectsButton>
     </Container>

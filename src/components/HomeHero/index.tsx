@@ -18,8 +18,8 @@ export function HomeHero() {
       <img src="https://github.com/manoelduran.png" alt="Manoel Duran" />
       <InfoContainer>
         <InfoText>
-          <Pleasure>Bem vindo</Pleasure>
-          <PleasureName>ao meu Website!</PleasureName>
+          <Pleasure> Welcome to</Pleasure>
+          <PleasureName>my website!</PleasureName>
         </InfoText>
         <InfoCards>
           <InfoCardOne />

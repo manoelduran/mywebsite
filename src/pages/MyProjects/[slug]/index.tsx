@@ -52,7 +52,7 @@ export default function MyProject({ projects }: MyProjectProps) {
       <main>
         <Text>{projects.description}</Text>
         <ProjectButton type="button">
-          <a href={projects.link}>Ver projeto online</a>
+          <a href={projects.link}>See project</a>
         </ProjectButton>
       </main>
     </MyProjectContainer>

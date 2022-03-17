@@ -31,13 +31,13 @@ export function ContactUs() {
       <SectionTitle
         title={
           <>
-            Precisa dos <br />
-            meus serviços?
+            Thinking of <br />
+            developing some software?
           </>
         }
         description={
           <>
-            Preencha o formulário abaixo <br /> que irei retornar em breve!
+            Send me and <br /> I will return your message!
           </>
         }
       />
@@ -51,7 +51,7 @@ export function ContactUs() {
                 min="1"
                 max="30"
                 required
-                placeholder="Nome"
+                placeholder="Name"
                 value={name}
                 onChange={event => setName(event.target.value)}
               />
@@ -59,7 +59,7 @@ export function ContactUs() {
                 type="email"
                 name="email"
                 required
-                placeholder="E-mail"
+                placeholder="Email"
                 value={email}
                 onChange={event => setEmail(event.target.value)}
               />
@@ -69,12 +69,12 @@ export function ContactUs() {
             <TextArea
               name="message"
               required
-              placeholder="Mensagem"
+              placeholder="Message"
               value={message}
               onChange={event => setMessage(event.target.value)}
             />
           </FormTextArea>
-          <FormButton type="submit">Enviar</FormButton>
+          <FormButton type="submit">Send</FormButton>
         </form>
       </Content>
     </Container>

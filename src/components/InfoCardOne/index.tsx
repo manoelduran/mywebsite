@@ -12,13 +12,13 @@ import {
 export function InfoCardOne() {
   return (
     <Card data-aos="zoom-in">
-      <CardText>// Minha apresentação</CardText>
-      <Info>Infos</Info> {'\u007B'}
+      <CardText>// About Me</CardText>
+      <Info>User</Info> {'\u007B'}
       <UserCardInfos>
-        Nome: <UserName>Manoel,</UserName>
+        First Name: <UserName>Manoel,</UserName>
       </UserCardInfos>
       <UserCardInfos>
-        Sobrenome: <UserLastName>Cendon Duran</UserLastName>
+        Last Name: <UserLastName>Cendon Duran</UserLastName>
       </UserCardInfos>
       {'\u007D'}
     </Card>
