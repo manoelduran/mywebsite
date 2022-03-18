@@ -28,7 +28,7 @@ export function ProjectItem({ title, type, slug, image }: ProjectItemProps) {
         </Content>
       </ProjectItemSection>
       <ProjectItemButton type="button">
-        <Link href={`/MyProjects/${slug}`}>
+        <Link href={`/Projects/${slug}`}>
           <a>
             See more
             <AiOutlineRightCircle />

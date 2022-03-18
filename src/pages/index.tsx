@@ -45,7 +45,7 @@ export default function Home({ projects }: HomeProps) {
         <meta name="twitter:image:src" content="/ogimage.png" />
         <meta
           property="og:description"
-          content="I'm a software developer. Here you can know about me and see me portfolio!"
+          content="I'm a software developer. Here you can know about me and see my portfolio!"
         />
       </Head>
       <Header />

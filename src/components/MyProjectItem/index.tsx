@@ -16,7 +16,7 @@ export function MyProjectItem({
 }: MyProjectItemProps) {
   return (
     <Container imgUrl={imgUrl} data-aos="zoom-in">
-      <Link href={`/MyProjects/${slug}`}>
+      <Link href={`/Projects/${slug}`}>
         <a>
           <Overlay />
           <SectionDiv>

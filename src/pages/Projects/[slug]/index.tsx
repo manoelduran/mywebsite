@@ -23,11 +23,11 @@ interface IProjects {
   thumbnail: string;
 }
 
-interface MyProjectProps {
+interface ProjectProps {
   projects: IProjects;
 }
 
-export default function MyProject({ projects }: MyProjectProps) {
+export default function Project({ projects }: ProjectProps) {
   const router = useRouter();
   if (router.isFallback) {
     return <LoadingScreen />;

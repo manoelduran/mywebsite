@@ -32,7 +32,7 @@ export function Projects({ projects }: ProjectsProps) {
         ))}
       </SectionContainer>
       <ProjectsButton type="button">
-        <Link href="/MyProjects">
+        <Link href="/Projects">
           <a>See all projects</a>
         </Link>
       </ProjectsButton>

@@ -18,11 +18,11 @@ interface IProjects {
   thumbnail: string;
 }
 
-interface MyProjectsProps {
+interface ProjectsProps {
   projects: IProjects[];
 }
 
-export default function MyProjects({ projects }: MyProjectsProps) {
+export default function Projects({ projects }: ProjectsProps) {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
