@@ -10,12 +10,12 @@ import {
   PleasureName,
   InfoCards
 } from './styles';
-// import picture from '../../assets'; //
+import CodePng from '../../assets/code.png';
 
 export function HomeHero() {
   return (
     <Container data-aos="fade-up">
-      <img src="https://github.com/manoelduran.png" alt="Manoel Duran" />
+      <img src={CodePng} alt="Resume" />
       <InfoContainer>
         <InfoText>
           <Pleasure> Welcome to</Pleasure>
